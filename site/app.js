@@ -18,11 +18,12 @@ const lines=[
   ...WG4_SCHEDULE.map(([date,amount])=>({id:`WG4-${date}`,project:"WG4",date,amount}))
 ];
 const RECEIPT_STATE={
+  // Aligné 26 oct 2026 sur reçus CIF/MN (voir /workspace/leos-pdfs)
   "WG1-FEE-REG":"Salesforce","WG1-FEE-ADMIN":"Salesforce",
   "WG1-2024-03-27":"Salesforce","WG1-2024-06-26":"Salesforce","WG1-2024-09-26":"Salesforce","WG1-2024-12-26":"Salesforce",
   "WG1-2025-03-28":"Salesforce","WG1-2025-06-27":"Salesforce",
-  "WG1-2025-08-31":"Morocco","WG1-2025-09-27":"Morocco","WG1-2025-10-31":"Morocco",
-  "WG1-2025-12-30":"Salesforce","WG1-2026-02-28":"Salesforce","WG1-2026-04-30":"Crypto","WG1-2026-06-30":"Salesforce","WG1-2026-08-30":"Salary",
+  "WG1-2025-08-31":"Morocco","WG1-2025-09-27":"Morocco","WG1-2025-10-31":"Crypto",
+  "WG1-2025-12-30":"Salesforce","WG1-2026-02-28":"Salesforce","WG1-2026-04-30":"Salesforce","WG1-2026-06-30":"Salesforce","WG1-2026-08-30":"Salary",
   "WG4-FEE-REG":"Salesforce","WG4-FEE-ADMIN":"Salesforce",
   "WG4-2025-02-10":"Salesforce","WG4-2025-03-10":"Salesforce","WG4-2025-04-10":"Salesforce","WG4-2025-05-10":"Salesforce",
   "WG4-2025-06-10":"Salesforce","WG4-2025-07-10":"Salesforce","WG4-2025-08-10":"Salesforce",
@@ -34,7 +35,7 @@ const RECEIPT_STATE={
   "WG4-2026-10-10":"Salary"
 };
 const PLANNED_SOURCES={"WG1-2026-10-30":{method:"Salary",channel:"cheque",note:"Prévu prélèvement chèque 30 oct 2026"}};
-const RECEIPT_MIGRATION_VERSION="receipts-2026-10-26-spa-aed-v6";
+const RECEIPT_MIGRATION_VERSION="receipts-2026-10-26-spa-aed-v7";
 const RENT_DEFAULTS={
   WG1:{annual:17500,start:"2026-11-01",growth:4,benchmarkAed:70000},
   WG4:{annual:21150,start:"2028-09-01",growth:0,benchmarkAed:90000}
