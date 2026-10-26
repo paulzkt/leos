@@ -30,10 +30,11 @@ const RECEIPT_STATE={
   "WG4-2026-01-10":"Morocco","WG4-2026-02-10":"Morocco",
   "WG4-2026-03-10":"Crypto","WG4-2026-04-10":"Crypto","WG4-2026-05-10":"Crypto","WG4-2026-06-10":"Crypto","WG4-2026-07-10":"Crypto",
   "WG4-2026-08-10":"Salesforce",
-  "WG4-2026-09-10":"Salary"
+  "WG4-2026-09-10":"Crypto",
+  "WG4-2026-10-10":"Salary"
 };
 const PLANNED_SOURCES={"WG1-2026-10-30":{method:"Salary",channel:"cheque",note:"Prévu prélèvement chèque 30 oct 2026"}};
-const RECEIPT_MIGRATION_VERSION="receipts-2026-10-26-spa-aed-v5";
+const RECEIPT_MIGRATION_VERSION="receipts-2026-10-26-spa-aed-v6";
 const RENT_DEFAULTS={
   WG1:{annual:15275,start:"2026-09-01",growth:4,benchmarkAed:65000},
   WG4:{annual:21150,start:"2028-09-01",growth:0,benchmarkAed:90000}
