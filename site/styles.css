@@ -10,3 +10,5 @@ body{font-family:Poppins,system-ui,sans-serif;background:#0e1010}
 .bottom-nav button.active{background:linear-gradient(145deg,#c4a564,#a58b54);color:#0e1010}
 .gt-hero{background:linear-gradient(160deg,rgba(196,165,100,.1),rgba(26,26,26,.95));border:1px solid rgba(196,165,100,.35)}
 .gt-card,.gt-metric{background:linear-gradient(145deg,rgba(39,39,39,.9),rgba(14,16,16,.95));border-color:rgba(196,165,100,.12)}
+
+.charge-rows{margin-top:12px;display:grid;gap:4px}.charge-row{display:flex;justify-content:space-between;gap:8px;font-size:10px;padding:4px 0;border-bottom:1px solid rgba(196,165,100,.12)}.charge-row b{font-family:inherit;font-weight:600}.charge-row.neg b{color:var(--muted)}.charge-row.net b{color:#c4a564}.charge-row.total{margin-top:8px;font-size:12px;border:0}.scen-chips{display:flex;gap:5px}.scen-chips .chip{padding:4px 8px;font-size:9px}.mgmt-toggle{display:flex;gap:6px;align-items:center;font-size:9px;color:var(--muted);margin-top:10px}.rent-callout{margin-top:9px;border-color:#c4a564}.rent-callout strong{font-size:20px}
