@@ -445,6 +445,8 @@ const RENT_DEFAULTS={
 };
 const RENT_MIGRATION_VERSION="rent-plan-2026-08-30-v1";
 const methods=["Salary","Crypto","Morocco","Salesforce","Rent"];
+const SRC_FR={Salary:"Salaire",Crypto:"Crypto",Morocco:"Maroc",Salesforce:"Salesforce",Rent:"Loyer",Unassigned:"Non attribué"};
+
 let route="home",filter="all",rentTab="WG1",horizon=20,currency=localStorage.getItem("wg-currency")||"AED";
 let state=JSON.parse(localStorage.getItem("wg-state")||"null")||Object.fromEntries(lines.map(l=>[l.id,{paid:l.date<="2026-06-30",method:""}]));
 if(localStorage.getItem("wg-receipt-migration")!==RECEIPT_MIGRATION_VERSION){
@@ -568,7 +570,6 @@ const statusTime=document.querySelector("#status-time");
 if(statusTime){const now=new Date();statusTime.textContent=now.toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"});}
 const path=location.pathname.split("/")[1];if(["payments","rent","resale","estimation"].includes(path))route=path;render();
 
-const SRC_FR={Salary:"Salaire",Crypto:"Crypto",Morocco:"Maroc",Salesforce:"Salesforce",Rent:"Loyer",Unassigned:"Non attribué"};
 function renderTeslaHome(){
   const today=new Date().toISOString().slice(0,10),sched=lines.filter(l=>!l.label);
   const proj=p=>{const own=sched.filter(l=>l.project===p),total=own.reduce((s,l)=>s+l.amount,0),paid=own.filter(l=>state[l.id]?.paid).reduce((s,l)=>s+l.amount,0),next=own.filter(l=>!state[l.id]?.paid).sort((a,b)=>a.date.localeCompare(b.date))[0],left=own.filter(l=>!state[l.id]?.paid).length;return{p,total,paid,rem:total-paid,pc:pct(paid,total),next,left}};
