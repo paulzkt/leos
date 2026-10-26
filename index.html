@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="description" content="Mobile payment and rental tracker for the Weybridge Garden Dubai property portfolio." />
+    <meta property="og:title" content="Leos Weybridge Garden Investment" />
+    <meta property="og:description" content="WG1 & WG4 payment plan, market value and investment tracking." />
+    <meta property="og:type" content="website" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Leos Weybridge Garden Investment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <style>:root{--bg:#171a21;--surface:#20242d;--surface2:#292e39;--fg:#f7f3e8;--muted:#a6a7aa;--border:#363b46;--gold:#efd66e;--cyan:#62c8d5;--green:#6ed7a5;--orange:#e9a35b;--red:#ef7c76;--radius:20px;color-scheme:dark}*{box-sizing:border-box}html{background:#0e1015}body{margin:0;min-height:100vh;color:var(--fg);font-family:Inter,system-ui,sans-serif;background:radial-gradient(ellipse 65% 38% at 50% 0%,rgba(239,214,110,.14),transparent 72%),#0e1015}.app-frame{position:relative;width:min(100%,440px);min-height:100vh;margin:0 auto;overflow:hidden;background:radial-gradient(ellipse 80% 40% at 50% -10%,rgba(239,214,110,.12),transparent 70%),radial-gradient(ellipse 60% 50% at 100% 100%,rgba(98,200,213,.07),transparent 70%),var(--bg)}button,input{font:inherit}.status-bar{height:34px;padding:11px 24px 0;display:flex;align-items:center;justify-content:space-between;font:600 11px Inter,sans-serif;letter-spacing:.02em}.status-icons{display:flex;align-items:center;gap:6px}.status-icons i{display:block}.signal{width:14px;height:9px;background:linear-gradient(to right,currentColor 0 18%,transparent 18% 28%,currentColor 28% 48%,transparent 48% 58%,currentColor 58% 78%,transparent 78% 88%,currentColor 88%);clip-path:polygon(0 100%,0 74%,18% 74%,18% 55%,48% 55%,48% 30%,78% 30%,78% 0,100% 0,100% 100%)}.wifi{width:13px;height:9px;border-top:2px solid currentColor;border-radius:50%}.battery{width:16px;height:8px;border:1px solid currentColor;border-radius:2px;position:relative}.battery:before{content:"";position:absolute;inset:1px;background:currentColor;border-radius:1px}.battery:after{content:"";position:absolute;right:-3px;top:2px;width:2px;height:4px;background:currentColor;border-radius:0 1px 1px 0}.shell{width:100%;min-height:calc(100vh - 34px);margin:auto;padding:0 0 118px;animation:page-in .28s ease-out}.header{padding:18px 24px 16px}.eyebrow{display:flex;align-items:center;gap:7px;margin:0;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.17em}.header h1{font:400 38px/1 Instrument Serif,Georgia,serif;margin:7px 0 0}.header p:not(.eyebrow){font-size:12px;color:var(--muted);margin:7px 0 0;line-height:1.5}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.section{padding:0 20px;margin-top:14px}.section-title{margin:0 0 9px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.17em}.card{border:1px solid rgba(255,255,255,.08);border-radius:22px;background:linear-gradient(145deg,rgba(46,51,62,.88),rgba(25,29,37,.92));box-shadow:inset 0 1px rgba(255,255,255,.06),0 18px 42px -28px #000;padding:18px}.hero{padding:22px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-58px;top:-62px;background:rgba(239,214,110,.1);filter:blur(2px);pointer-events:none}.label{color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.15em}.big-number{font:400 38px/1 Instrument Serif,Georgia,serif;margin:8px 0 0}.mono{font-family:"JetBrains Mono",monospace}.gold{color:var(--gold)}.cyan{color:var(--cyan)}.green{color:var(--green)}.muted{color:var(--muted)}.grid2,.grid3{display:grid;gap:8px}.grid2{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(3,1fr)}.mini{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.045);border-radius:14px;padding:11px}.mini strong{display:block;font:500 12px "JetBrains Mono",monospace;margin-top:5px}.progress{height:8px;border-radius:999px;background:var(--surface2);overflow:hidden;display:flex;margin-top:10px}.progress span{height:100%}.legend{display:flex;justify-content:space-between;gap:8px;padding-top:9px;font-size:10px}.legend i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px}.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.kpi{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.045);border-radius:16px;padding:13px}.kpi b{display:block;font:400 24px Instrument Serif,Georgia,serif;margin-top:7px}.btn,.chip{border:1px solid var(--border);background:var(--surface);color:var(--muted);border-radius:999px;padding:8px 12px;font-size:11px;cursor:pointer;transition:transform .15s ease,background .15s ease,color .15s ease}.btn:active,.chip:active,.bottom-nav button:active,.check:active,.rent-line:active{transform:scale(.96)}.chip.active,.btn.primary{background:var(--gold);border-color:var(--gold);color:#1d2027}.filters{display:flex;gap:7px;padding:0 20px 12px}.table-wrap{margin:0 10px;border:1px solid rgba(255,255,255,.08);border-radius:22px;overflow:hidden;background:rgba(31,35,43,.88)}.payment-head,.payment-row{display:grid;grid-template-columns:minmax(70px,1fr) 1.28fr 1.28fr}.payment-head{padding:10px 12px;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.14em;border-bottom:1px solid var(--border);background:rgba(255,255,255,.025)}.payment-head span:not(:first-child){text-align:center}.payment-row{border-bottom:1px solid rgba(54,59,70,.7);min-height:58px}.payment-row:last-child{border-bottom:0}.month{display:flex;flex-direction:column;justify-content:center;padding:9px 11px;color:var(--muted);font:500 11px "JetBrains Mono",monospace}.month small{font:500 8px Inter,sans-serif;color:var(--gold);text-transform:uppercase;letter-spacing:.12em;margin-top:3px}.pay-cell{border-left:1px solid rgba(54,59,70,.7);display:flex;align-items:center;gap:7px;padding:8px}.check{width:26px;height:26px;border-radius:50%;border:1px solid var(--border);background:transparent;color:#182027;display:grid;place-items:center;cursor:pointer;flex:none;transition:transform .15s ease,background .2s ease}.check.paid{background:var(--gold);border-color:var(--gold)}.pay-cell.wg1 .check.paid{background:var(--cyan);border-color:var(--cyan)}.amount{border:0;background:none;color:var(--fg);font:500 11px "JetBrains Mono",monospace;text-align:left;padding:0;cursor:pointer}.amount.paid{text-decoration:line-through;color:var(--muted)}.method{display:block;font-size:8px;color:var(--green);margin-top:4px;letter-spacing:.1em}.form-field{display:block;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07);border-radius:15px;padding:12px 14px;margin-top:10px}.form-field span{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.14em;margin-bottom:7px}.form-field input{width:100%;border:0;outline:0;background:transparent;color:var(--fg);font:500 16px "JetBrains Mono",monospace}.rent-line{width:100%;display:flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.07);border-radius:17px;background:linear-gradient(145deg,rgba(42,47,58,.88),rgba(26,30,38,.92));color:var(--fg);padding:13px;margin-bottom:8px;text-align:left;cursor:pointer;transition:transform .15s ease,border-color .15s ease}.rent-line .check{width:34px;height:34px}.rent-line strong{font-size:13px;flex:1}.rent-line em{font:500 12px "JetBrains Mono",monospace;color:var(--cyan);font-style:normal}.notice{border-color:rgba(239,214,110,.35);font-size:12px;line-height:1.5;color:var(--muted)}.notice b{color:var(--gold);display:block;margin-bottom:4px}.bottom-nav{position:fixed;z-index:20;bottom:max(12px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:min(calc(100% - 28px),404px);display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:6px;border:1px solid rgba(255,255,255,.09);border-radius:24px;background:rgba(25,29,36,.92);backdrop-filter:blur(22px) saturate(150%);box-shadow:0 18px 48px rgba(0,0,0,.55)}.bottom-nav button{min-height:52px;border:0;border-radius:18px;background:transparent;color:var(--muted);padding:7px 3px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;transition:transform .15s ease,background .18s ease,color .18s ease}.bottom-nav .nav-icon{display:grid;place-items:center;width:24px;height:20px;margin:0;font-size:17px;line-height:1}.bottom-nav small{font-size:9px;letter-spacing:.02em}.bottom-nav button.active{background:linear-gradient(145deg,#f4df82,#e6c956);color:#20232a;font-weight:600;box-shadow:0 8px 20px rgba(239,214,110,.18)}.sheet-backdrop{position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.64);backdrop-filter:blur(5px)}.sheet{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,440px);background:#20242d;border:1px solid var(--border);border-radius:28px 28px 0 0;padding:22px 24px calc(30px + env(safe-area-inset-bottom));animation:sheet-up .25s ease-out}.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.method-grid button{border:1px solid var(--border);border-radius:13px;background:var(--surface2);color:var(--fg);padding:12px;cursor:pointer}.method-grid button.active{border-color:var(--gold);color:var(--gold)}.summary-table{width:100%;border-collapse:collapse;font-size:11px}.summary-table th,.summary-table td{padding:9px 5px;border-bottom:1px solid var(--border);text-align:right}.summary-table th:first-child,.summary-table td:first-child{text-align:left;color:var(--muted)}@keyframes page-in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}@keyframes sheet-up{from{transform:translate(-50%,22px);opacity:.5}to{transform:translate(-50%,0);opacity:1}}@media(min-width:700px){body{padding:22px}.app-frame{min-height:calc(100vh - 44px);border:1px solid rgba(255,255,255,.09);border-radius:34px;box-shadow:0 34px 100px rgba(0,0,0,.55)}.shell{min-height:calc(100vh - 78px)}.bottom-nav{bottom:34px}.status-bar{padding-left:28px;padding-right:28px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+    <style>
+      .visa-banner-wrap{padding:0 16px 3px}
+      .visa-banner{display:flex;align-items:center;gap:9px;padding:10px 13px;border-radius:13px;font:600 12px Inter}
+      .visa-banner.eligible{color:var(--green);background:rgba(54,207,140,.11);border:1px solid rgba(54,207,140,.25)}
+      .visa-banner.pending{color:var(--muted);background:var(--surface);border:1px solid var(--border)}
+      .visa-banner strong{margin-left:auto;color:inherit;font-size:11px}
+      .visa-light{width:9px;height:9px;border-radius:50%;background:currentColor;box-shadow:0 0 11px currentColor}
+      .visa-banner.meter{display:block;padding:6px 10px 5px;border-radius:10px}
+      .visa-meter-head,.visa-meter-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+      .visa-meter-head>span{display:flex;align-items:center;gap:6px;font-size:10px}
+      .visa-meter-head .visa-light{width:6px;height:6px;box-shadow:0 0 7px currentColor}
+      .visa-meter-head strong{margin:0;font:600 9px Inter,sans-serif;white-space:nowrap}
+      .visa-meter-track{position:relative;height:4px;margin-top:12px;border-radius:999px;background:rgba(255,255,255,.1)}
+      .visa-meter-fill,.visa-meter-overflow{position:absolute;left:0;top:0;height:100%;border-radius:inherit;background:rgba(110,215,165,.55)}
+      .visa-meter-overflow{background:var(--green);box-shadow:0 0 12px rgba(110,215,165,.55)}
+      .visa-threshold{position:absolute;top:-3px;width:1px;height:10px;background:var(--fg);transform:translateX(-1px)}
+      .visa-threshold small{position:absolute;right:3px;bottom:7px;color:var(--muted);font:500 6px "JetBrains Mono",monospace;white-space:nowrap}
+      .visa-meter-foot{display:none}
+      .bottom-nav{grid-template-columns:repeat(5,1fr)}
+      .bottom-nav small{font-size:8px}
+      .dash-header h1{max-width:290px;font-size:32px;line-height:1.02}
+      .dash-header .row{align-items:flex-start}
+      .dash-header .chip{margin-top:21px}
+      .dash-first{margin-top:12px}
+      .dash-hero{padding:24px}
+      .dash-arrow{font-size:22px}
+      .resale-summary{display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:center;margin-top:11px;padding:10px 12px;border-radius:13px;background:rgba(110,215,165,.07);border:1px solid rgba(110,215,165,.18)}
+      .resale-summary span{color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.1em}
+      .resale-summary strong{font:500 13px "JetBrains Mono",monospace;color:var(--fg)}
+      .resale-summary em{grid-column:1/-1;color:var(--green);font:500 9px "JetBrains Mono",monospace;font-style:normal}
+      .dash-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+      .dash-hero-grid>div{padding:12px;background:rgba(255,255,255,.02);border-radius:14px}
+      .dash-hero-grid strong{display:block;margin-top:7px;font-size:12px}
+      .dash-net{display:grid;grid-template-columns:1fr auto;gap:5px 12px;align-items:center;margin:18px 0;color:var(--muted);font-size:11px;line-height:1.4}
+      .dash-net strong{color:var(--fg)}
+      .dash-net span:last-child{grid-column:2}
+      .dash-progress-label{margin-top:4px}
+      .dash-progress-label .mono{font-size:10px}
+      .dash-track{height:8px;border-radius:99px;overflow:hidden;display:flex;background:#484d58;margin:10px 0 14px}
+      .dash-track span{display:block;height:100%;background:var(--gold)}
+      .dash-track i{display:block;height:100%;background:var(--cyan)}
+      .dash-legend{display:grid;gap:8px}
+      .dash-legend>div{display:grid;grid-template-columns:1fr auto 44px;align-items:center;gap:8px;color:var(--muted);font-size:10px}
+      .dash-legend strong{color:var(--fg);font-weight:500}
+      .dash-legend em{text-align:right;font-style:normal}
+      .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px}
+      .gold-dot{background:var(--gold)}.cyan-dot{background:var(--cyan)}.gray-dot{background:#555b67}
+      .dash-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+      .dash-metrics .card{padding:15px;min-height:116px}
+      .dash-metrics span{display:block;color:var(--muted);font-size:9px;letter-spacing:.12em;text-transform:uppercase}
+      .dash-metrics strong{display:block;font:400 25px Instrument Serif,serif;margin:13px 0 8px}
+      .dash-metrics small{color:var(--muted);font-size:10px}
+      .next-card{display:grid;grid-template-columns:auto 1fr auto;gap:13px;align-items:center}
+      .next-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:rgba(239,214,110,.14);color:var(--gold);font-size:22px}
+      .next-card>div{min-width:0}
+      .next-card .label{display:block;margin-bottom:6px}
+      .next-card strong{display:inline-block;font:500 15px "JetBrains Mono",monospace;white-space:nowrap}
+      .next-card small{margin-left:5px;color:var(--muted)}
+      .next-card>span:last-child{white-space:nowrap;font-size:11px}
+      .handover{border:1px solid rgba(255,255,255,.08);color:var(--fg);text-align:left;cursor:pointer}
+      .handover span{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.11em}
+      .handover strong{display:block;margin:12px 0 8px;font:400 22px Instrument Serif,serif;color:var(--muted)}
+      .handover em{color:var(--gold);font-size:11px;font-style:normal}
+      .investor-mode{width:100%;text-align:left;border-color:rgba(239,214,110,.35);background:rgba(239,214,110,.04);cursor:pointer}
+      .investor-mode b{display:block;color:var(--gold);font-size:14px;margin-bottom:7px}
+      .investor-mode span{display:block;color:var(--muted);font-size:11px;line-height:1.5}
+      .dash-property-stack{display:grid;gap:12px}
+      .dash-property h2{margin:0;font:400 25px Instrument Serif,serif}
+      .dash-property .row>strong{font-size:16px}
+      .dash-property p{margin:5px 0 18px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+      .market-indicator{padding:14px;margin:0 0 17px;border:1px solid rgba(110,215,165,.22);border-radius:16px;background:rgba(110,215,165,.055)}
+      .market-indicator .row{align-items:flex-start}
+      .market-indicator>div:first-child strong{display:block;margin-top:6px;font:500 16px "JetBrains Mono",monospace}
+      .market-update{border:1px solid rgba(110,215,165,.28);border-radius:999px;background:rgba(110,215,165,.08);color:var(--green);padding:6px 9px;font-size:9px;cursor:pointer}
+      .market-gain{display:flex;justify-content:space-between;align-items:center;margin-top:11px;padding-top:10px;border-top:1px solid rgba(110,215,165,.16);font:500 11px "JetBrains Mono",monospace}
+      .market-gain.positive{color:var(--green)}.market-gain.negative{color:var(--red)}
+      .market-meta{display:flex;justify-content:space-between;gap:10px;margin-top:8px;color:var(--muted);font-size:8px;line-height:1.4}
+      .market-meta span:last-child{text-align:right;white-space:nowrap}
+      .market-source{margin:13px 0 0;color:var(--muted);font-size:9px;line-height:1.5}
+      .resale-total{background:linear-gradient(145deg,rgba(110,215,165,.09),rgba(25,29,37,.92));border-color:rgba(110,215,165,.22)}
+      .resale-total strong{display:block;margin-top:8px;font:400 36px Instrument Serif,serif}
+      .resale-total p{margin:8px 0 0;color:var(--muted);font-size:11px}
+      .resale-total p b{color:var(--fg);font-weight:500}
+      .resale-table-wrap{padding:0;overflow-x:auto}
+      .resale-table{width:100%;min-width:680px;border-collapse:collapse;font-size:10px}
+      .resale-table th,.resale-table td{padding:14px 12px;border-bottom:1px solid var(--border);text-align:right;vertical-align:top;white-space:nowrap}
+      .resale-table th{color:var(--muted);font-size:8px;text-transform:uppercase;letter-spacing:.08em;font-weight:500;background:rgba(255,255,255,.02)}
+      .resale-table th:first-child,.resale-table td:first-child{text-align:left;position:sticky;left:0;background:var(--surface);z-index:1}
+      .resale-table td{font-family:"JetBrains Mono",monospace}
+      .resale-table td:first-child{min-width:190px;font-family:Inter,sans-serif}
+      .resale-table td b{display:block;color:var(--fg);font-weight:500}
+      .resale-table td small{display:block;margin-top:5px;color:var(--muted);font-size:8px;white-space:normal;line-height:1.4}
+      .resale-table td button{margin-top:9px;border:0;background:none;color:var(--gold);font-size:8px;padding:0;cursor:pointer}
+      .resale-table .positive{color:var(--green)}.resale-table .negative{color:var(--red)}
+      .resale-table .total-row td{border-bottom:0;background:rgba(110,215,165,.055);font-weight:500}
+      .resale-table .total-row td:first-child{background:color-mix(in srgb,var(--surface) 94%,var(--green))}
+      .resale-card-stack{display:grid;gap:12px}
+      .resale-property-card{min-width:0}
+      .resale-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+      .resale-card-head>div{min-width:0}
+      .resale-card-head h2{margin:0;font:400 25px Instrument Serif,serif}
+      .resale-card-head p{margin:5px 0 0;color:var(--muted);font-size:9px;line-height:1.4}
+      .resale-card-head button{flex:none;border:1px solid var(--border);border-radius:999px;background:var(--surface2);color:var(--gold);padding:7px 9px;font-size:9px;cursor:pointer}
+      .resale-card-head>span{color:var(--muted);font-size:9px;white-space:nowrap}
+      .resale-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:14px}
+      .resale-values>div{min-width:0;padding:11px;border-radius:13px;background:rgba(255,255,255,.03)}
+      .resale-values span{display:block;color:var(--muted);font-size:8px;text-transform:uppercase;letter-spacing:.08em}
+      .resale-values strong{display:block;margin-top:7px;font:500 11px "JetBrains Mono",monospace;white-space:normal;overflow-wrap:anywhere}
+      .resale-values .positive{color:var(--green)}.resale-values .negative{color:var(--red)}
+      .resale-updated{display:block;margin-top:12px;color:var(--muted);font-size:8px}
+      .resale-portfolio-total{border-color:rgba(110,215,165,.25);background:linear-gradient(145deg,rgba(110,215,165,.075),rgba(25,29,37,.92))}
+      @media(max-width:340px){.resale-card-head{display:grid}.resale-card-head button{justify-self:start}.resale-values{grid-template-columns:1fr}}
+      .dash-split{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:15px}
+      .dash-split>div{min-width:0}
+      .dash-split span{display:block;color:var(--muted);font-size:8px;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+      .dash-split strong{display:block;margin-top:8px;font:500 10px "JetBrains Mono",monospace;white-space:nowrap}
+      .dash-split small{display:block;margin-top:4px;color:var(--muted);font:400 9px "JetBrains Mono",monospace}
+      .dash-yields{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;border-top:1px solid var(--border);margin-top:17px;padding-top:15px}
+      .dash-yields span{display:block;color:var(--muted);font-size:8px;text-transform:uppercase;letter-spacing:.08em}
+      .dash-yields strong{display:block;margin-top:8px;font-size:12px;font-weight:500}
+      .snowball-summary{padding:18px 20px;border:1px solid rgba(196,165,100,.36);background:linear-gradient(125deg,rgba(196,165,100,.11),rgba(23,23,23,.96));border-radius:0 0 34px 0}
+      .snowball-summary>strong{display:flex;align-items:center;gap:12px;margin-top:8px;font:500 24px "JetBrains Mono",monospace;color:var(--gold)}
+      .snowball-summary>strong i{font-style:normal;color:var(--fg);font-size:16px}
+      .snowball-summary p{margin:7px 0 0;color:var(--muted);font-size:10px;line-height:1.45}
+      .funding-forecast{margin-top:17px;padding-top:16px;border-top:1px solid var(--border)}
+      .funding-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+      .funding-head .label,.funding-head small{display:block}
+      .funding-head small{margin-top:5px;color:var(--muted);font-size:8px}
+      .funding-head>strong{color:var(--gold);font:500 11px "JetBrains Mono",monospace;white-space:nowrap}
+      .funding-bar{display:flex;height:7px;overflow:hidden;border-radius:99px;background:var(--surface2);margin:13px 0 9px}
+      .funding-bar span{height:100%;background:var(--gold)}
+      .funding-bar i{height:100%;background:#e7dcc3}
+      .funding-row{display:grid;grid-template-columns:1fr auto 45px;align-items:center;gap:8px;padding:5px 0;color:var(--muted);font-size:9px}
+      .funding-row strong,.funding-row em{font:500 9px "JetBrains Mono",monospace;color:var(--fg);font-style:normal;text-align:right}
+      .funding-row.rent span,.funding-row.rent em{color:#e7dcc3}
+      .snowball-badge{margin-top:10px;padding:9px 10px;border:1px solid rgba(196,165,100,.28);background:rgba(196,165,100,.07);color:var(--gold);font-size:8px;line-height:1.45;text-transform:uppercase;letter-spacing:.06em}
+      .source-card{padding:20px}
+      .source-bar{display:flex;height:9px;overflow:hidden;border-radius:99px;background:var(--surface2);margin-bottom:17px}
+      .source-bar span{height:100%}.source-bar .salary,.source-dot.salary{background:var(--green)}.source-bar .crypto,.source-dot.crypto{background:var(--orange)}.source-bar .morocco,.source-dot.morocco{background:var(--red)}.source-bar .salesforce,.source-dot.salesforce{background:#669df6}.source-bar .rent,.source-dot.rent{background:var(--cyan)}
+      .source-row{display:grid;grid-template-columns:1fr auto 54px;gap:10px;align-items:center;padding:7px 0;font-size:11px}
+      .source-name{display:flex;align-items:center}.source-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:10px}.source-dot.unassigned{background:#555b67}
+      .source-row strong{text-align:right;font-weight:500}.source-note{color:var(--muted);font-size:10px;line-height:1.4}
+      @media(max-width:390px){.next-card{grid-template-columns:auto 1fr}.next-card>span:last-child{grid-column:2;color:var(--muted);font-size:9px}.next-card small{display:block;margin:4px 0 0}}
+      @media(max-width:360px){.dash-header h1{font-size:28px;max-width:240px}.dash-hero{padding:19px}.dash-split span{font-size:7px}.dash-split strong{font-size:9px}}
+
+      /* LEOS Developments-inspired visual system */
+      :root{
+        --bg:#101010;
+        --surface:#171717;
+        --surface2:#202020;
+        --fg:#fff;
+        --muted:#99958e;
+        --border:#34312c;
+        --gold:#c4a564;
+        --cyan:#d8c28f;
+        --green:#78b991;
+        --orange:#c89155;
+        --red:#c97970;
+        --radius:0;
+        color-scheme:dark
+      }
+      html{background:#090909}
+      body{
+        font-family:Poppins,Arial,sans-serif;
+        background:#090909
+      }
+      .app-frame{
+        background:
+          linear-gradient(90deg,transparent 0 92%,rgba(196,165,100,.045) 92% 100%),
+          var(--bg)
+      }
+      .app-frame:before{
+        content:"";
+        position:absolute;
+        z-index:0;
+        top:34px;
+        right:0;
+        width:1px;
+        height:180px;
+        background:var(--gold);
+        opacity:.65;
+        pointer-events:none
+      }
+      .status-bar,.shell,.bottom-nav{position:relative}
+      .status-bar{font-family:Poppins,Arial,sans-serif;font-weight:500}
+      .shell{padding-bottom:112px}
+      .header{padding:22px 24px 20px}
+      .eyebrow,.label,.section-title,
+      .dash-metrics span,.handover span,.dash-property p,
+      .dash-split span,.dash-yields span,.resale-values span,
+      .form-field span,.payment-head{
+        font-family:Poppins,Arial,sans-serif;
+        font-weight:400;
+        letter-spacing:.2em
+      }
+      .eyebrow{color:var(--gold);font-size:9px}
+      .eyebrow:before{
+        content:"LEOS";
+        display:inline-grid;
+        place-items:center;
+        min-width:42px;
+        height:19px;
+        margin-right:3px;
+        border:1px solid var(--gold);
+        color:#fff;
+        font-size:8px;
+        font-weight:600;
+        letter-spacing:.16em
+      }
+      .header h1,.dash-header h1{
+        max-width:310px;
+        margin-top:12px;
+        font:300 31px/1.16 Poppins,Arial,sans-serif;
+        letter-spacing:-.04em
+      }
+      .header p:not(.eyebrow){max-width:330px;color:#aaa69f;font-size:11px;font-weight:300}
+      .dash-header .chip{margin-top:26px}
+      .section{margin-top:18px}
+      .section-title{margin-bottom:11px;color:#aaa69f}
+      .card,.table-wrap,.rent-line{
+        border:1px solid var(--border);
+        border-radius:30px 0 30px 0;
+        background:var(--surface);
+        box-shadow:none
+      }
+      .hero:after{
+        width:110px;
+        height:1px;
+        top:24px;
+        right:-35px;
+        border-radius:0;
+        background:var(--gold);
+        filter:none;
+        transform:rotate(-45deg)
+      }
+      .dash-first{margin-top:7px}
+      .dash-hero{padding:25px 22px}
+      .big-number,.dash-metrics strong,.handover strong,
+      .dash-property h2,.resale-card-head h2,.resale-total strong{
+        font-family:Poppins,Arial,sans-serif;
+        font-weight:300;
+        letter-spacing:-.045em
+      }
+      .big-number{font-size:35px}
+      .mono,.mini strong,.next-card strong,.market-indicator>div:first-child strong,
+      .market-gain,.resale-values strong,.dash-split strong,.dash-split small,
+      .form-field input,.amount,.month,.rent-line em{
+        font-family:"JetBrains Mono",monospace
+      }
+      .dash-hero-grid>div,.mini,.kpi,.resale-values>div{
+        border:1px solid #2d2a26;
+        border-radius:16px 0 16px 0;
+        background:#1d1d1d
+      }
+      .dash-track,.progress,.source-bar{height:6px;border-radius:0;background:#2b2b2b}
+      .dash-track span,.progress span{background:var(--gold)}
+      .dash-track i{background:#eee4ce}
+      .dot,.source-dot,.legend i{border-radius:0}
+      .resale-summary,.market-indicator{
+        border-color:rgba(196,165,100,.28);
+        border-radius:18px 0 18px 0;
+        background:rgba(196,165,100,.07)
+      }
+      .resale-summary em,.market-gain.positive,.resale-values .positive,
+      .resale-table .positive{color:var(--gold)}
+      .market-update,.chip,.btn{
+        border-radius:0;
+        border-color:#4a4336;
+        background:transparent;
+        color:var(--gold);
+        text-transform:uppercase;
+        letter-spacing:.1em
+      }
+      .chip.active,.btn.primary{
+        border-color:var(--gold);
+        background:var(--gold);
+        color:#111
+      }
+      .next-icon{
+        border:1px solid rgba(196,165,100,.42);
+        border-radius:18px 0 18px 0;
+        background:rgba(196,165,100,.1)
+      }
+      .handover{border-color:#3b3730}
+      .investor-mode{
+        border-color:rgba(196,165,100,.5);
+        background:linear-gradient(110deg,rgba(196,165,100,.1),transparent 66%)
+      }
+      .investor-mode b,.handover em,.resale-card-head button{color:var(--gold)}
+      .source-bar .salary,.source-dot.salary{background:#75aa86}
+      .source-bar .crypto,.source-dot.crypto{background:#d7b06d}
+      .source-bar .morocco,.source-dot.morocco{background:#9f6d64}
+      .source-bar .salesforce,.source-dot.salesforce{background:#c4a564}
+      .source-bar .rent,.source-dot.rent{background:#e7dcc3}
+      .visa-banner.meter{
+        padding:7px 10px 6px;
+        border-radius:0;
+        border-color:rgba(120,185,145,.38);
+        background:#151a16
+      }
+      .visa-banner.meter .visa-meter-track{border-radius:0;background:#292e2a}
+      .visa-meter-fill,.visa-meter-overflow{border-radius:0}
+      .visa-meter-overflow{box-shadow:none}
+      .resale-total,.resale-portfolio-total{
+        border-color:rgba(196,165,100,.38);
+        background:linear-gradient(125deg,rgba(196,165,100,.12),#171717 58%)
+      }
+      .table-wrap{background:var(--surface)}
+      .payment-head{background:#1d1d1d}
+      .payment-row{border-bottom-color:#2d2b27}
+      .pay-cell{border-left-color:#2d2b27}
+      .check{border-radius:0}
+      .check.paid,.pay-cell.wg1 .check.paid{background:var(--gold);border-color:var(--gold)}
+      .form-field{border-radius:16px 0 16px 0;background:#1d1d1d;border-color:#302d28}
+      .rent-line{border-radius:22px 0 22px 0}
+      .sheet{
+        border-radius:34px 0 0 0;
+        border-color:#4b4335;
+        background:#171717
+      }
+      .method-grid button{border-radius:14px 0 14px 0;background:#202020}
+      .bottom-nav{
+        gap:1px;
+        padding:5px;
+        border:1px solid #403a31;
+        border-radius:24px 0 24px 0;
+        background:rgba(15,15,15,.96);
+        box-shadow:0 16px 45px rgba(0,0,0,.5)
+      }
+      .bottom-nav button{min-height:50px;border-radius:17px 0 17px 0}
+      .bottom-nav small{font-family:Poppins,Arial,sans-serif;font-size:7px;text-transform:uppercase;letter-spacing:.04em}
+      .bottom-nav button.active{
+        background:var(--gold);
+        color:#111;
+        box-shadow:none
+      }
+      @media(min-width:700px){
+        body{background:#090909}
+        .app-frame{border-color:#3a342b;border-radius:34px 0 34px 0;box-shadow:0 34px 100px rgba(0,0,0,.65)}
+      }
+      .rent-note{margin:13px 0 0;color:var(--muted);font-size:9px;line-height:1.55}
+      .rent-phases{display:grid;gap:9px}
+      .rent-phase{padding:16px 18px}
+      .rent-phase strong{display:block;margin-top:10px;font:500 17px "JetBrains Mono",monospace;color:var(--gold)}
+      .rent-phase p{margin:7px 0 3px;font-size:11px;color:var(--fg)}
+      .rent-phase small{display:block;color:var(--muted);font-size:9px;line-height:1.45}
+      .rent-cheque-copy{min-width:0;flex:1}
+      .rent-cheque-copy strong{display:block}
+      .rent-cheque-copy small{display:block;margin-top:3px;color:var(--muted);font-size:8px}
+      .rent-line em{flex:none}
+      .bottom-nav{
+        position:fixed;
+        bottom:0;
+        width:min(100%,440px);
+        padding:5px 5px max(5px,env(safe-area-inset-bottom));
+        border-width:1px 0 0;
+        border-radius:24px 0 0 0;
+        box-shadow:0 -12px 34px rgba(0,0,0,.42)
+      }
+      @media(min-width:700px){.bottom-nav{bottom:22px;width:440px}}
+    </style>
+  </head>
+  <body>
+    <div class="app-frame">
+      <div class="status-bar" aria-hidden="true">
+        <span id="status-time">9:41</span>
+        <span class="status-icons"><i class="signal"></i><i class="wifi"></i><i class="battery"></i></span>
+      </div>
+      <main id="app" aria-live="polite"></main>
+      <nav class="bottom-nav" aria-label="Main navigation">
+        <button data-route="home" class="active"><span class="nav-icon">⌂</span><small>Home</small></button>
+        <button data-route="payments"><span class="nav-icon">✓</span><small>Payments</small></button>
+        <button data-route="rent"><span class="nav-icon">⌁</span><small>Rent</small></button>
+        <button data-route="resale"><span class="nav-icon">◇</span><small>Resale</small></button>
+        <button data-route="estimation"><span class="nav-icon">↗</span><small>Insights</small></button>
+      </nav>
+      <div id="sheet" class="sheet-backdrop" hidden></div>
+    </div>
+    <script>const TOTALS={WG1:206898.12,WG4:278141.5};
+const FEES={WG1:9527.96,WG4:12377.70};
+const AED_PER_EUR=4.2;
+const GOLDEN_VISA_AED=2000000;
+const MARKET_DEFAULTS={WG1:{aed:1050000,updated:"2026-07-19",basis:"1br"},WG4:{aed:1600000,updated:"2026-07-19",basis:"2br"}};
+const WG1_SCHEDULE=[
+  ["2024-03-27",41379.62],["2024-06-26",15517.36],["2024-09-26",15517.36],["2024-12-26",15517.36],
+  ["2025-03-28",15517.36],["2025-06-27",10344.91],["2025-08-31",10344.91],["2025-09-27",10344.91],["2025-10-31",10344.91],["2025-12-30",10344.91],
+  ["2026-02-28",8275.92],["2026-04-30",8275.92],["2026-06-30",6206.94],["2026-08-30",6206.94],["2026-10-30",4137.96],["2026-12-30",4137.96],
+  ["2027-02-28",4137.96],["2027-04-30",4137.96],["2027-06-30",4137.96],["2027-08-30",2068.98]
+];
+const WG4_SCHEDULE=[
+  ["2025-02-10",13907.07],["2025-03-10",44502.64],["2025-04-10",2781.42],["2025-05-10",2781.42],["2025-06-10",2781.42],["2025-07-10",2781.42],["2025-08-10",13907.07],
+  ["2025-09-10",2781.42],["2025-10-10",2781.42],["2025-11-10",2781.42],["2025-12-10",2781.42],["2026-01-10",2781.42],["2026-02-10",13907.07],
+  ["2026-03-10",2781.42],["2026-04-10",2781.42],["2026-05-10",2781.42],["2026-06-10",2781.42],["2026-07-10",2781.42],["2026-08-10",13907.07],
+  ["2026-09-10",2781.42],["2026-10-10",2781.42],["2026-11-10",2781.42],["2026-12-10",2781.42],["2027-01-10",2781.42],["2027-02-10",13907.07],
+  ["2027-03-10",2781.42],["2027-04-10",2781.42],["2027-05-10",2781.42],["2027-06-10",2781.42],["2027-06-30",2781.42],["2027-07-30",2781.42],["2027-08-30",2781.42],
+  ["2027-09-30",2781.42],["2027-10-30",2781.42],["2027-11-30",2781.42],["2027-12-30",2781.42],
+  ["2028-01-30",2781.42],["2028-02-29",2781.42],["2028-03-30",2781.42],["2028-04-30",2781.42],["2028-05-30",2781.42],["2028-06-30",2781.42],["2028-07-30",2781.42],["2028-08-30",2781.42],
+  ["2028-09-30",2781.42],["2028-10-30",2781.42],["2028-11-30",2781.42],["2028-12-30",2781.42],
+  ["2029-01-30",2781.42],["2029-02-28",2781.42],["2029-03-30",2781.42],["2029-04-30",2781.42],["2029-05-30",2781.42],["2029-06-30",2781.42],["2029-07-30",2781.42],["2029-08-30",2781.42],
+  ["2029-09-30",2781.42],["2029-10-30",2781.42],["2029-11-30",2781.42],["2029-12-30",2781.42],
+  ["2030-01-30",2781.42],["2030-02-28",2781.42],["2030-03-30",2781.42],["2030-04-30",2781.42],["2030-05-30",2781.15]
+];
+const lines=[
+  {id:"WG1-FEE-REG",project:"WG1",date:"2025-02-06",amount:8275.92,label:"Reg. Fees"},
+  {id:"WG1-FEE-ADMIN",project:"WG1",date:"2025-08-18",amount:1252.04,label:"Admin Fees"},
+  {id:"WG4-FEE-REG",project:"WG4",date:"2025-03-08",amount:11125.66,label:"Reg. Fees"},
+  {id:"WG4-FEE-ADMIN",project:"WG4",date:"2025-03-08",amount:1252.04,label:"Admin Fees"},
+  ...WG1_SCHEDULE.map(([date,amount])=>({id:`WG1-${date}`,project:"WG1",date,amount})),
+  ...WG4_SCHEDULE.map(([date,amount])=>({id:`WG4-${date}`,project:"WG4",date,amount}))
+];
+const RECEIPT_STATE={
+  "WG1-FEE-REG":"Salesforce","WG1-FEE-ADMIN":"Salesforce",
+  "WG1-2024-03-27":"Salesforce","WG1-2024-06-26":"Salesforce","WG1-2024-09-26":"Salesforce","WG1-2024-12-26":"Salesforce",
+  "WG1-2025-03-28":"Salesforce","WG1-2025-06-27":"Salesforce",
+  "WG1-2025-08-31":"Morocco","WG1-2025-09-27":"Morocco","WG1-2025-10-31":"Morocco",
+  "WG1-2025-12-30":"Salesforce","WG1-2026-02-28":"Salesforce","WG1-2026-04-30":"Crypto","WG1-2026-06-30":"Salesforce","WG1-2026-08-30":"Salary",
+  "WG4-FEE-REG":"Salesforce","WG4-FEE-ADMIN":"Salesforce",
+  "WG4-2025-02-10":"Salesforce","WG4-2025-03-10":"Salesforce","WG4-2025-04-10":"Salesforce","WG4-2025-05-10":"Salesforce",
+  "WG4-2025-06-10":"Salesforce","WG4-2025-07-10":"Salesforce","WG4-2025-08-10":"Salesforce",
+  "WG4-2025-09-10":"Morocco","WG4-2025-10-10":"Morocco","WG4-2025-11-10":"Morocco","WG4-2025-12-10":"Morocco",
+  "WG4-2026-01-10":"Morocco","WG4-2026-02-10":"Morocco",
+  "WG4-2026-03-10":"Crypto","WG4-2026-04-10":"Crypto","WG4-2026-05-10":"Crypto","WG4-2026-06-10":"Crypto","WG4-2026-07-10":"Crypto",
+  "WG4-2026-08-10":"Salesforce"
+};
+const RECEIPT_MIGRATION_VERSION="receipts-2026-08-30-v3";
+const RENT_DEFAULTS={
+  WG1:{annual:15275,start:"2026-09-01",growth:4,benchmarkAed:65000},
+  WG4:{annual:21150,start:"2028-09-01",growth:0,benchmarkAed:90000}
+};
+const RENT_MIGRATION_VERSION="rent-plan-2026-08-30-v1";
+const methods=["Salary","Crypto","Morocco","Salesforce","Rent"];
+let route="home",filter="all",rentTab="WG1",horizon=20,currency=localStorage.getItem("wg-currency")||"EUR";
+let state=JSON.parse(localStorage.getItem("wg-state")||"null")||Object.fromEntries(lines.map(l=>[l.id,{paid:l.date<="2026-06-30",method:""}]));
+if(localStorage.getItem("wg-receipt-migration")!==RECEIPT_MIGRATION_VERSION){
+  Object.entries(RECEIPT_STATE).forEach(([id,method])=>{if(lines.some(line=>line.id===id))state[id]={...state[id],paid:true,method}});
+  localStorage.setItem("wg-state",JSON.stringify(state));
+  localStorage.setItem("wg-receipt-migration",RECEIPT_MIGRATION_VERSION);
+}
+let rent=JSON.parse(localStorage.getItem("wg-rent")||"null")||structuredClone(RENT_DEFAULTS);
+if(localStorage.getItem("wg-rent-migration")!==RENT_MIGRATION_VERSION){
+  rent=structuredClone(RENT_DEFAULTS);
+  localStorage.setItem("wg-rent",JSON.stringify(rent));
+  localStorage.setItem("wg-rent-migration",RENT_MIGRATION_VERSION);
+}
+let market=JSON.parse(localStorage.getItem("wg-market")||"null")||structuredClone(MARKET_DEFAULTS);
+if(market.WG4?.basis!=="2br"){market.WG4=structuredClone(MARKET_DEFAULTS.WG4);localStorage.setItem("wg-market",JSON.stringify(market))}
+const app=document.querySelector("#app"),sheet=document.querySelector("#sheet");
+const money=(v,compact=false)=>new Intl.NumberFormat(currency==="AED"?"en-AE":"fr-FR",{style:"currency",currency,notation:compact?"compact":"standard",maximumFractionDigits:compact?1:0}).format(currency==="AED"?v*AED_PER_EUR:v);
+const month=s=>new Date(`${s}T12:00:00`).toLocaleDateString("en-GB",{month:"short",year:"2-digit"});
+const shortDate=s=>new Date(`${s}T12:00:00`).toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"2-digit"});
+const date=s=>new Date(`${s}T12:00:00`).toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"});
+const pct=(a,b)=>b?a/b*100:0;
+function save(){localStorage.setItem("wg-state",JSON.stringify(state));localStorage.setItem("wg-rent",JSON.stringify(rent));}
+function breakdown(project){const own=lines.filter(l=>l.project===project&&!l.label),start=rent[project].start;const paid=own.filter(l=>state[l.id]?.paid).reduce((s,l)=>s+l.amount,0);const post=own.filter(l=>start&&l.date>start).reduce((s,l)=>s+l.amount,0);const pre=TOTALS[project]-post;return{paid,post,pre,remaining:Math.max(0,pre-paid),annual:+rent[project].annual||0};}
+function header(eyebrow,title,subtitle,action=""){return `<header class="header"><div class="row"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1></div>${action}</div><p>${subtitle}</p></header>`}
+function shell(content){app.innerHTML=`<div class="shell">${content}</div>`;document.querySelectorAll(".bottom-nav button").forEach(b=>b.classList.toggle("active",b.dataset.route===route));}
+function renderHome(){const a=breakdown("WG1"),b=breakdown("WG4"),value=TOTALS.WG1+TOTALS.WG4,fees=FEES.WG1+FEES.WG4,paid=a.paid+b.paid,post=a.post+b.post,remaining=a.remaining+b.remaining,annual=a.annual+b.annual,cash=a.pre+b.pre,total=value+fees;const upcoming=lines.filter(l=>!state[l.id]?.paid&&l.date>=new Date().toISOString().slice(0,10)).sort((x,y)=>x.date.localeCompare(y.date))[0];shell(`${header("▦ Portfolio · Dubai","Weybridge Garden","WG1 & WG4 · Kensington Gardens · post-handover payment plan",`<button class="chip" id="currency">${currency}</button>`)}<section class="section"><div class="card hero"><div class="row"><span class="label">Property value</span><span class="gold">↗</span></div><div class="big-number">${money(value)}</div><div class="grid2" style="margin-top:14px"><div class="mini"><span class="label">Fees</span><strong class="gold">${money(fees,true)}</strong></div><div class="mini"><span class="label">Total commitment</span><strong>${money(total,true)}</strong></div></div><p class="muted" style="font-size:11px">Net cash engaged <span class="mono" style="color:var(--fg)">${money(cash,true)}</span> · ${pct(cash,total).toFixed(1)}% of commitment</p><div class="row"><span class="label">Payment progress</span><span class="mono gold" style="font-size:10px">${pct(paid+post,total).toFixed(1)}%</span></div><div class="progress"><span style="width:${pct(paid,total)}%;background:var(--gold)"></span><span style="width:${pct(post,total)}%;background:var(--cyan)"></span></div><div class="legend"><span><i style="background:var(--gold)"></i>Paid ${money(paid,true)}</span><span><i style="background:var(--cyan)"></i>Tenant ${money(post,true)}</span></div></div></section><section class="section"><p class="section-title">Portfolio performance</p><div class="kpis"><div class="kpi"><span class="label">Cash yield</span><b class="gold">${annual?pct(annual,cash).toFixed(2)+"%":"—"}</b><small class="muted">Annual rent / cash</small></div><div class="kpi"><span class="label">Gross yield</span><b>${annual?pct(annual,value).toFixed(2)+"%":"—"}</b><small class="muted">Annual rent / value</small></div><div class="kpi"><span class="label">Monthly rent</span><b class="cyan">${annual?money(annual/12,true):"—"}</b><small class="muted">WG1 + WG4</small></div><div class="kpi"><span class="label">Leverage</span><b>${pct(post,total).toFixed(1)}%</b><small class="muted">Tenant funded</small></div></div></section><section class="section"><p class="section-title">Next milestone</p><div class="card"><div class="row"><div><span class="label">${upcoming?month(upcoming.date):"Complete"}</span><div style="font:400 25px Instrument Serif;margin-top:5px">${upcoming?money(upcoming.amount):"No payment due"}</div><small class="muted">${upcoming?upcoming.project+" · "+date(upcoming.date):"All scheduled payments marked paid"}</small></div><span class="gold" style="font-size:26px">◷</span></div></div></section>`);document.querySelector("#currency").onclick=()=>{currency=currency==="EUR"?"AED":"EUR";localStorage.setItem("wg-currency",currency);renderHome()}}
+function groupedRows(){const map=new Map;for(const l of lines){const key=l.label?`${l.date}-${l.label}`:l.date;if(!map.has(key))map.set(key,{date:l.date,label:l.label||"",WG1:null,WG4:null});map.get(key)[l.project]=l}return [...map.values()].sort((a,b)=>a.date.localeCompare(b.date)||a.label.localeCompare(b.label))}
+function renderPayments(){const rows=groupedRows().filter(r=>filter==="all"||[r.WG1,r.WG4].some(l=>l&&(filter==="paid"?state[l.id]?.paid:!state[l.id]?.paid)));const paid=lines.filter(l=>state[l.id]?.paid).length;const cell=(l,p)=>!l?`<div class="pay-cell"><span class="muted">—</span></div>`:`<div class="pay-cell ${p.toLowerCase()}"><button class="check ${state[l.id]?.paid?"paid":""}" data-toggle="${l.id}" aria-label="Toggle payment">${state[l.id]?.paid?"✓":""}</button><button class="amount ${state[l.id]?.paid?"paid":""}" data-open="${l.id}">${money(l.amount,true)}${state[l.id]?.method?`<span class="method">${state[l.id].method}</span>`:""}</button></div>`;shell(`${header("Official schedule","Payments",`${paid} / ${lines.length} payments made · dates reconciled with LEOS statements`)}<div class="filters">${["all","upcoming","paid"].map(f=>`<button class="chip ${filter===f||(f==="upcoming"&&filter==="unpaid")?"active":""}" data-filter="${f}">${f[0].toUpperCase()+f.slice(1)}</button>`).join("")}</div><div class="table-wrap"><div class="payment-head"><span>Due date</span><span>WG1</span><span>WG4</span></div>${rows.map(r=>`<div class="payment-row"><div class="month">${shortDate(r.date)}${r.label?`<small>${r.label}</small>`:""}</div>${cell(r.WG1,"WG1")}${cell(r.WG4,"WG4")}</div>`).join("")}</div>`);document.querySelectorAll("[data-filter]").forEach(b=>b.onclick=()=>{filter=b.dataset.filter==="upcoming"?"unpaid":b.dataset.filter;renderPayments()});document.querySelectorAll("[data-toggle]").forEach(b=>b.onclick=()=>toggle(b.dataset.toggle));document.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>openSheet(b.dataset.open))}
+function toggle(id){state[id]={...state[id],paid:!state[id]?.paid};save();route==="payments"?renderPayments():renderRent()}
+function openSheet(id){const l=lines.find(x=>x.id===id);sheet.hidden=false;sheet.innerHTML=`<div class="sheet"><div class="row"><div><span class="label">${l.project} · ${date(l.date)}</span><h2 style="font:400 32px Instrument Serif;margin:5px 0">${money(l.amount)}</h2></div><button class="chip" id="close">Close</button></div><button class="btn primary" id="sheet-toggle" style="width:100%;margin-top:8px">${state[id]?.paid?"Mark as upcoming":"Mark as paid"}</button><p class="section-title" style="margin-top:20px">Payment source</p><div class="method-grid">${methods.map(m=>`<button data-method="${m}" class="${state[id]?.method===m?"active":""}">${m}</button>`).join("")}</div></div>`;sheet.onclick=e=>{if(e.target===sheet)closeSheet()};document.querySelector("#close").onclick=closeSheet;document.querySelector("#sheet-toggle").onclick=()=>{toggle(id);closeSheet()};document.querySelectorAll("[data-method]").forEach(b=>b.onclick=()=>{state[id].method=b.dataset.method;state[id].paid=true;save();closeSheet();renderPayments()})}
+function closeSheet(){sheet.hidden=true;sheet.innerHTML=""}
+function scheduleRent(project){
+  const cfg=rent[project];
+  if(!cfg.start||!cfg.annual)return[];
+  const out=[],d=new Date(`${cfg.start}T12:00:00`),growth=(+cfg.growth||0)/100;
+  let year=0;
+  while(d<=new Date("2030-12-31T12:00:00")){
+    const iso=d.toISOString().slice(0,10);
+    out.push({id:`RENT-${project}-${iso}`,date:iso,amount:+cfg.annual*Math.pow(1+growth,year),year});
+    d.setFullYear(d.getFullYear()+1);
+    year++;
+  }
+  return out;
+}
+function simulateFundingMix(){
+  const projectTotal=project=>TOTALS[project]+FEES[project];
+  const due=(project,from,to)=>lines.filter(line=>line.project===project&&!line.label&&(!from||line.date>=from)&&(!to||line.date<to)).reduce((sum,line)=>sum+line.amount,0);
+  const wg1Cheques=scheduleRent("WG1"),wg4Cheques=scheduleRent("WG4"),wg4Start=rent.WG4.start;
+  const lastWg4Due=lines.filter(line=>line.project==="WG4"&&!line.label).reduce((latest,line)=>line.date>latest?line.date:latest,"");
+  const wg1First=wg1Cheques[0],wg1Rent=wg1First?Math.min(wg1First.amount,due("WG1",wg1First.date)):0;
+  const bridgeCheques=wg1Cheques.slice(1).filter(cheque=>wg4Start&&cheque.date<wg4Start);
+  const bridgeStart=bridgeCheques[0]?.date;
+  const bridgeAvailable=bridgeCheques.reduce((sum,cheque)=>sum+cheque.amount,0);
+  const bridgeRent=bridgeStart?Math.min(bridgeAvailable,due("WG4",bridgeStart,wg4Start)):0;
+  const snowballAvailable=[...wg1Cheques,...wg4Cheques].filter(cheque=>wg4Start&&cheque.date>=wg4Start&&cheque.date<=lastWg4Due).reduce((sum,cheque)=>sum+cheque.amount,0);
+  const snowballRent=wg4Start?Math.min(snowballAvailable,due("WG4",wg4Start)):0;
+  const result={WG1:{rent:wg1Rent},WG4:{rent:bridgeRent+snowballRent}};
+  for(const project of ["WG1","WG4"]){
+    result[project].total=projectTotal(project);
+    result[project].pocket=Math.max(0,result[project].total-result[project].rent);
+    result[project].rentPct=pct(result[project].rent,result[project].total);
+    result[project].pocketPct=pct(result[project].pocket,result[project].total);
+  }
+  result.snowball=result.WG1.rentPct?pct(result.WG4.rentPct,result.WG1.rentPct)/100:0;
+  return result;
+}
+function renderRent(){
+  const cfg=rent[rentTab],schedule=scheduleRent(rentTab),received=schedule.filter(l=>state[l.id]?.paid).reduce((s,l)=>s+l.amount,0);
+  const wg1Growth=(+rent.WG1.growth||0)/100,stage1=+rent.WG1.annual||0,stage2=stage1*(1+wg1Growth),stage3Wg1=stage2*(1+wg1Growth),stage3=stage3Wg1+(+rent.WG4.annual||0);
+  const wg4AnnualDue=lines.filter(line=>line.project==="WG4"&&line.date>="2028-09-01"&&line.date<="2029-08-31").reduce((sum,line)=>sum+line.amount,0);
+  const phase=(number,period,title,amount,detail)=>`<article class="card rent-phase"><span class="label">Phase ${number} · ${period}</span><strong>${money(amount,true)}</strong><p>${title}</p><small>${detail}</small></article>`;
+  shell(`${header("Rental strategy","Rent","Annual cheques · WG1 from Sep 2026 · WG4 from Sep 2028")}<div class="filters">${["WG1","WG4"].map(p=>`<button class="chip ${rentTab===p?"active":""}" data-rent-tab="${p}">${p}</button>`).join("")}</div><section class="section" style="margin-top:0"><div class="card"><div class="row"><span class="label">⌁ ${rentTab} annual cheque</span><span class="mono cyan" style="font-size:10px">≈ AED ${new Intl.NumberFormat("en-AE").format(cfg.benchmarkAed||cfg.annual*AED_PER_EUR)}</span></div><label class="form-field"><span>Annual rent · EUR (gross)</span><input id="annual" type="number" min="0" step="100" value="${cfg.annual||""}" placeholder="0"></label><div class="grid2"><label class="form-field"><span>First cheque</span><input id="start" type="date" value="${cfg.start||""}"></label><label class="form-field"><span>Annual increase · %</span><input id="growth" type="number" min="0" step="0.5" value="${cfg.growth||0}"></label></div><div class="grid3" style="margin-top:12px"><div class="mini"><span class="label">Monthly equiv.</span><strong class="cyan">${cfg.annual?money(cfg.annual/12,true):"—"}</strong></div><div class="mini"><span class="label">First cheque</span><strong>${cfg.annual?money(cfg.annual,true):"—"}</strong></div><div class="mini"><span class="label">Received</span><strong>${money(received,true)}</strong></div></div><p class="rent-note">Gross annual cheque paid at the beginning of the lease year. Service charges remain separate.</p></div></section><section class="section"><p class="section-title">Three-stage strategy</p><div class="rent-phases">${phase(1,"Sep 26–Aug 27","WG1 cheque pays WG1",stage1,"Cash continues to cover WG4.")}${phase(2,"Sep 27–Aug 28","Renewed WG1 cheque pays WG4",stage2,`${pct(stage2,wg4AnnualDue).toFixed(0)}% of one WG4 payment year.`)}${phase(3,"From Sep 2028","Both cheques pay WG4",stage3,`${pct(stage3,wg4AnnualDue).toFixed(0)}% coverage · ${stage3>=wg4AnnualDue?"self-funding scenario":"cash contribution required"}.`)}</div></section><section class="section"><p class="section-title">Annual cheque schedule · ${rentTab}</p>${schedule.map(l=>`<button class="rent-line" data-rent-line="${l.id}"><span class="check ${state[l.id]?.paid?"paid":""}">${state[l.id]?.paid?"✓":""}</span><span class="rent-cheque-copy"><strong class="${state[l.id]?.paid?"muted":""}">${month(l.date)}</strong><small>Annual cheque${l.year?` · +${cfg.growth||0}%`:""}</small></span><em>${money(l.amount)}</em></button>`).join("")||`<div class="card notice">Set the annual rent and first cheque date to generate the schedule.</div>`}</section>`);
+  document.querySelectorAll("[data-rent-tab]").forEach(b=>b.onclick=()=>{rentTab=b.dataset.rentTab;renderRent()});
+  document.querySelector("#annual").onchange=e=>{cfg.annual=+e.target.value;cfg.benchmarkAed=Math.round(cfg.annual*AED_PER_EUR);save();renderRent()};
+  document.querySelector("#start").onchange=e=>{cfg.start=e.target.value;save();renderRent()};
+  document.querySelector("#growth").onchange=e=>{cfg.growth=+e.target.value;save();renderRent()};
+  document.querySelectorAll("[data-rent-line]").forEach(b=>b.onclick=()=>{const id=b.dataset.rentLine;state[id]={paid:!state[id]?.paid,method:"Rent"};save();renderRent()});
+}
+function renderEstimation(){const a=breakdown("WG1"),b=breakdown("WG4"),cash=a.pre+b.pre,post=a.post+b.post,annual=a.annual+b.annual,gain=annual*horizon,final=cash+gain,amount=TOTALS.WG1+TOTALS.WG4;shell(`${header("Analysis","Estimation","Cash-on-cash yield & rental projection")}<div class="filters">${[5,10,15,20].map(h=>`<button class="chip ${horizon===h?"active":""}" data-horizon="${h}">${h} yrs</button>`).join("")}</div>${annual?"":`<section class="section" style="margin-top:0"><button class="card notice" id="enable-rent" style="width:100%;text-align:left"><b>✦ Enable projection</b>Enter the annual rent for each apartment in the Rent tab to unlock yield, ROI and gains.</button></section>`}<section class="section"><div class="card hero"><span class="label">Final value · ${horizon} yrs</span><div class="big-number">${money(final,true)}</div><p class="mono gold">${annual?"+"+money(gain,true):"—"} <span class="muted" style="font:400 11px Inter">of cumulative rent</span></p><div class="kpis"><div class="kpi"><span class="label">Cash yield</span><b class="gold">${annual?pct(annual,cash).toFixed(2)+"%":"—"}</b><small class="muted">Rent / Cash paid</small></div><div class="kpi"><span class="label">Payback in</span><b>${annual?(cash/annual).toFixed(1)+" yrs":"—"}</b><small class="muted">Cash / Annual rent</small></div><div class="kpi"><span class="label">Cash to invest</span><b>${money(cash,true)}</b><small class="muted">Pre-delivery</small></div><div class="kpi"><span class="label">Funded by tenants</span><b class="cyan">${money(post,true)}</b><small class="muted">Post-delivery</small></div></div><div class="progress"><span style="width:${pct(cash,amount)}%;background:var(--gold)"></span><span style="width:${pct(post,amount)}%;background:var(--cyan)"></span></div></div></section><section class="section"><p class="section-title">Full summary</p><div class="card"><table class="summary-table"><thead><tr><th></th><th>WG1</th><th>WG4</th><th>Total</th></tr></thead><tbody><tr><td>Property value</td><td>${money(TOTALS.WG1,true)}</td><td>${money(TOTALS.WG4,true)}</td><td>${money(amount,true)}</td></tr><tr><td>Cash paid</td><td>${money(a.pre,true)}</td><td>${money(b.pre,true)}</td><td>${money(cash,true)}</td></tr><tr><td>Tenant funded</td><td>${money(a.post,true)}</td><td>${money(b.post,true)}</td><td>${money(post,true)}</td></tr><tr><td>Annual rent</td><td>${money(a.annual,true)}</td><td>${money(b.annual,true)}</td><td>${money(annual,true)}</td></tr><tr><td>${horizon}-yr rent</td><td>${money(a.annual*horizon,true)}</td><td>${money(b.annual*horizon,true)}</td><td class="gold">${money(gain,true)}</td></tr></tbody></table></div></section>`);document.querySelectorAll("[data-horizon]").forEach(b=>b.onclick=()=>{horizon=+b.dataset.horizon;renderEstimation()});document.querySelector("#enable-rent")?.addEventListener("click",()=>navigate("rent"))}
+function marketMoney(aedValue){return currency==="AED"?new Intl.NumberFormat("en-AE",{style:"currency",currency:"AED",notation:"compact",maximumFractionDigits:2}).format(aedValue):money(aedValue/AED_PER_EUR,true)}
+function marketMoneyExact(aedValue){return currency==="AED"?new Intl.NumberFormat("en-AE",{style:"currency",currency:"AED",maximumFractionDigits:0}).format(aedValue):new Intl.NumberFormat("fr-FR",{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(aedValue/AED_PER_EUR)}
+function renderResaleSummary(){const bought=(TOTALS.WG1+TOTALS.WG4)*AED_PER_EUR,current=market.WG1.aed+market.WG4.aed,gain=current-bought,summary=document.createElement("div");app.querySelector(".dash-hero .label").textContent="Purchase value";summary.className="resale-summary";summary.innerHTML=`<span>(Potential resale)</span><strong>${marketMoney(current)}</strong><em>↗ +${marketMoney(gain)} · +${pct(gain,bought).toFixed(1)}%</em>`;app.querySelector(".dash-hero .big-number").after(summary)}
+function renderMarketIndicators(){document.querySelectorAll(".dash-property").forEach((card,index)=>{const project=index===0?"WG1":"WG4",bought=TOTALS[project]*AED_PER_EUR,current=market[project].aed,gain=current-bought,change=pct(gain,bought),details=project==="WG1"?"1 bedroom · Dubailand · bought 2024":"2-bedroom equivalent · study + pool + balcony",indicator=document.createElement("div");indicator.className="market-indicator";indicator.innerHTML=`<div class="row"><div><span class="label">Current market estimate</span><strong>${marketMoney(current)}</strong></div><button class="market-update" data-market="${project}" aria-label="Update ${project} market estimate">Update</button></div><div class="market-gain ${gain>=0?"positive":"negative"}"><span>${gain>=0?"↗":"↘"} ${gain>=0?"+":""}${marketMoney(gain)}</span><strong>${gain>=0?"+":""}${change.toFixed(1)}%</strong></div><div class="market-meta"><span>${details}</span><span>Updated ${date(market[project].updated)}</span></div>`;card.querySelector(".dash-track").before(indicator)});document.querySelectorAll("[data-market]").forEach(button=>button.onclick=()=>openMarketSheet(button.dataset.market))}
+function openMarketSheet(project){sheet.hidden=false;sheet.innerHTML=`<div class="sheet"><div class="row"><div><span class="label">Live market estimate</span><h2 style="font:400 30px Instrument Serif;margin:6px 0">${project}</h2></div><button class="chip" id="close-market">Close</button></div><p class="muted" style="font-size:11px;line-height:1.5">Update the latest comparable market value in AED. The price increase recalculates instantly.</p><label class="form-field"><span>Current value · AED</span><input id="market-value" type="number" min="0" step="1000" value="${market[project].aed}"></label><button class="btn primary" id="save-market" style="width:100%;margin-top:12px">Save current estimate</button><p class="market-source">Research baseline: ${project==="WG4"?"Weybridge Gardens 4 two-bedroom listings and DLD transactions":"current Weybridge Gardens one-bedroom listings"}, reviewed 19 Jul 2026.</p></div>`;document.querySelector("#close-market").onclick=closeSheet;document.querySelector("#save-market").onclick=()=>{market[project]={aed:+document.querySelector("#market-value").value||market[project].aed,updated:new Date().toISOString().slice(0,10),basis:MARKET_DEFAULTS[project].basis};localStorage.setItem("wg-market",JSON.stringify(market));closeSheet();render()};sheet.onclick=event=>{if(event.target===sheet)closeSheet()}}
+function renderResale(){const projects=["WG1","WG4"],rows=projects.map(project=>{const bought=TOTALS[project]*AED_PER_EUR,resale=market[project].aed,gain=resale-bought;return{project,bought,resale,gain,change:pct(gain,bought),details:project==="WG1"?"1 bedroom · Dubailand · bought 2024":"2-bedroom equivalent · study + pool + balcony",updated:market[project].updated}}),total=rows.reduce((sum,row)=>({bought:sum.bought+row.bought,resale:sum.resale+row.resale,gain:sum.gain+row.gain}),{bought:0,resale:0,gain:0}),totalChange=pct(total.gain,total.bought);shell(`${header("Market valuation","Potential resale","WG1 & WG4 · Bought versus current estimate",`<button class="chip" id="currency">${currency}</button>`)}<section class="section" style="margin-top:0"><div class="card resale-total"><span class="label">Overall estimated increase</span><strong class="green">+${totalChange.toFixed(2)}%</strong><p>${marketMoneyExact(total.bought)} bought → <b>${marketMoneyExact(total.resale)}</b> potential resale</p></div></section><section class="section"><p class="section-title">Detailed comparison</p><div class="card resale-table-wrap"><table class="resale-table"><thead><tr><th>Property</th><th>Bought</th><th>Potential resale</th><th>Increase</th><th>Increase %</th></tr></thead><tbody>${rows.map(row=>`<tr><td><b>Weybridge Garden ${row.project.slice(-1)}</b><small>${row.details}</small><button data-market="${row.project}">Update estimate</button></td><td>${marketMoneyExact(row.bought)}</td><td>${marketMoneyExact(row.resale)}<small>Updated ${date(row.updated)}</small></td><td class="${row.gain>=0?"positive":"negative"}">${row.gain>=0?"+":""}${marketMoneyExact(row.gain)}</td><td class="${row.change>=0?"positive":"negative"}">${row.change>=0?"+":""}${row.change.toFixed(2)}%</td></tr>`).join("")}<tr class="total-row"><td><b>Total portfolio</b><small>WG1 + WG4</small></td><td>${marketMoneyExact(total.bought)}</td><td>${marketMoneyExact(total.resale)}</td><td class="${total.gain>=0?"positive":"negative"}">${total.gain>=0?"+":""}${marketMoneyExact(total.gain)}</td><td class="${totalChange>=0?"positive":"negative"}">${totalChange>=0?"+":""}${totalChange.toFixed(2)}%</td></tr></tbody></table></div><p class="source-note">Indicative market estimates based on comparable listings and transactions. Update either estimate to recalculate every figure instantly.</p></section>`);document.querySelector("#currency").onclick=()=>{currency=currency==="EUR"?"AED":"EUR";localStorage.setItem("wg-currency",currency);renderResale()};document.querySelectorAll("[data-market]").forEach(button=>button.onclick=()=>openMarketSheet(button.dataset.market))}
+function renderResaleCards(){
+  const rows=["WG1","WG4"].map(project=>{const bought=TOTALS[project]*AED_PER_EUR,resale=market[project].aed,gain=resale-bought;return{project,bought,resale,gain,change:pct(gain,bought),details:project==="WG1"?"1 bedroom · Dubailand · bought 2024":"2-bedroom equivalent · study + pool + balcony",updated:market[project].updated}});
+  const total=rows.reduce((sum,row)=>({bought:sum.bought+row.bought,resale:sum.resale+row.resale,gain:sum.gain+row.gain}),{bought:0,resale:0,gain:0}),totalChange=pct(total.gain,total.bought);
+  const metrics=(bought,resale,gain,change)=>`<div class="resale-values"><div><span>Purchase price</span><strong>${marketMoneyExact(bought)}</strong></div><div><span>Potential resale</span><strong>${marketMoneyExact(resale)}</strong></div><div><span>Estimated gain</span><strong class="${gain>=0?"positive":"negative"}">${gain>=0?"+":""}${marketMoneyExact(gain)}</strong></div><div><span>Price increase</span><strong class="${change>=0?"positive":"negative"}">${change>=0?"+":""}${change.toFixed(2)}%</strong></div></div>`;
+  shell(`${header("Market valuation","Potential resale","WG1 & WG4 · Bought versus current estimate",`<button class="chip" id="currency">${currency}</button>`)}<section class="section" style="margin-top:0"><div class="card resale-total"><span class="label">Overall estimated increase</span><strong class="green">+${totalChange.toFixed(2)}%</strong><p>${marketMoneyExact(total.bought)} bought → <b>${marketMoneyExact(total.resale)}</b> potential resale</p></div></section><section class="section"><p class="section-title">Detailed comparison</p><div class="resale-card-stack">${rows.map(row=>`<article class="card resale-property-card"><div class="resale-card-head"><div><h2>Weybridge Garden ${row.project.slice(-1)}</h2><p>${row.details}</p></div><button data-market="${row.project}">Update</button></div>${metrics(row.bought,row.resale,row.gain,row.change)}<small class="resale-updated">Market estimate updated ${date(row.updated)}</small></article>`).join("")}<article class="card resale-property-card resale-portfolio-total"><div class="resale-card-head"><div><h2>Total portfolio</h2><p>Weybridge Garden 1 + Weybridge Garden 4</p></div><span>WG1 + WG4</span></div>${metrics(total.bought,total.resale,total.gain,totalChange)}</article></div><p class="source-note">Indicative market estimates based on comparable listings and transactions. Update either estimate to recalculate every figure instantly.</p></section>`);
+  document.querySelector("#currency").onclick=()=>{currency=currency==="EUR"?"AED":"EUR";localStorage.setItem("wg-currency",currency);renderResaleCards()};
+  document.querySelectorAll("[data-market]").forEach(button=>button.onclick=()=>openMarketSheet(button.dataset.market));
+}
+function renderGoldenVisaMeter(){const value=(TOTALS.WG1+TOTALS.WG4)*AED_PER_EUR,progress=pct(value,GOLDEN_VISA_AED),scale=Math.max(100,Math.ceil(progress/5)*5),thresholdPosition=100/scale*100,fillPosition=Math.min(100,progress/scale*100),banner=app.querySelector(".visa-banner"),current=new Intl.NumberFormat("en-AE",{notation:"compact",maximumFractionDigits:2}).format(value);banner.className=`visa-banner meter ${progress>=100?"eligible":"pending"}`;banner.innerHTML=`<div class="visa-meter-head"><span><i class="visa-light" aria-hidden="true"></i>Golden Visa</span><strong>${progress>=100?"Eligible":"Not eligible"} · ${progress.toFixed(1)}%</strong></div><div class="visa-meter-track" role="progressbar" aria-label="Golden Visa threshold progress" aria-valuemin="0" aria-valuemax="${scale}" aria-valuenow="${progress.toFixed(1)}"><span class="visa-meter-fill" style="width:${fillPosition}%"></span>${progress>100?`<span class="visa-meter-overflow" style="left:${thresholdPosition}%;width:${fillPosition-thresholdPosition}%"></span>`:""}<i class="visa-threshold" style="left:${thresholdPosition}%"><small>AED 2M · 100%</small></i></div><div class="visa-meter-foot"><span>0</span><strong>AED ${current} · ${progress.toFixed(1)}%</strong></div>`}
+function renderHomeReference(){
+  const portfolio={WG1:breakdown("WG1"),WG4:breakdown("WG4")};
+  const funding=simulateFundingMix();
+  const value=TOTALS.WG1+TOTALS.WG4,fees=FEES.WG1+FEES.WG4,total=value+fees;
+  const paidFees=lines.filter(l=>l.label&&state[l.id]?.paid).reduce((sum,l)=>sum+l.amount,0);
+  const paid=portfolio.WG1.paid+portfolio.WG4.paid+paidFees,post=portfolio.WG1.post+portfolio.WG4.post;
+  const remaining=Math.max(0,total-paid-post),annual=portfolio.WG1.annual+portfolio.WG4.annual;
+  const eligible=value*AED_PER_EUR>GOLDEN_VISA_AED;
+  const upcoming=lines.filter(l=>!state[l.id]?.paid&&l.date>=new Date().toISOString().slice(0,10)).sort((x,y)=>x.date.localeCompare(y.date))[0];
+  const projectCard=project=>{const item=portfolio[project],mix=funding[project],projectFees=FEES[project],projectPaid=item.paid+lines.filter(l=>l.project===project&&l.label&&state[l.id]?.paid).reduce((sum,l)=>sum+l.amount,0),projectTotal=TOTALS[project]+projectFees,projectRemaining=Math.max(0,projectTotal-projectPaid-item.post),progress=pct(projectPaid+item.post,projectTotal);return `<div class="card dash-property"><div class="row"><div><h2>Weybridge Garden ${project.slice(-1)}</h2><p>${project} · ${money(TOTALS[project],true)} + fees ${money(projectFees,true)}</p></div><strong class="mono gold">${progress.toFixed(1)}%</strong></div><div class="dash-track"><span style="width:${Math.min(100,pct(projectPaid,projectTotal))}%"></span><i style="width:${Math.min(100,pct(item.post,projectTotal))}%"></i></div><div class="dash-split"><div><span><b class="dot gold-dot"></b>Paid pre</span><strong>${money(projectPaid,true)}</strong><small>${pct(projectPaid,projectTotal).toFixed(1)}%</small></div><div><span><b class="dot cyan-dot"></b>Post-deliv.</span><strong>${money(item.post,true)}</strong><small>${pct(item.post,projectTotal).toFixed(1)}%</small></div><div><span><b class="dot gray-dot"></b>Remaining</span><strong>${money(projectRemaining,true)}</strong><small>${pct(projectRemaining,projectTotal).toFixed(1)}%</small></div></div><div class="dash-yields"><div><span>Cash yield</span><strong>${item.annual?pct(item.annual,item.pre).toFixed(2)+"%":"—"}</strong></div><div><span>Gross yield</span><strong>${item.annual?pct(item.annual,TOTALS[project]).toFixed(2)+"%":"—"}</strong></div><div><span>Rent/yr</span><strong>${item.annual?money(item.annual,true):"—"}</strong></div></div><div class="funding-forecast"><div class="funding-head"><div><span class="label">End-of-plan funding mix</span><small>Rental simulation</small></div><strong>${mix.rentPct.toFixed(1)}% rent</strong></div><div class="funding-bar" aria-label="${mix.pocketPct.toFixed(1)}% out of pocket and ${mix.rentPct.toFixed(1)}% covered by rent"><span style="width:${mix.pocketPct}%"></span><i style="width:${mix.rentPct}%"></i></div><div class="funding-row"><span>Out of pocket</span><strong>${money(mix.pocket,true)}</strong><em>${mix.pocketPct.toFixed(1)}%</em></div><div class="funding-row rent"><span>Covered by rent</span><strong>${money(mix.rent,true)}</strong><em>${mix.rentPct.toFixed(1)}%</em></div>${project==="WG4"?`<div class="snowball-badge">✦ Snowball effect · ${funding.snowball.toFixed(1)}× more rent-funded than WG1</div>`:""}</div></div>`};
+  const sourceValues=Object.fromEntries(methods.map(method=>[method,lines.filter(l=>state[l.id]?.paid&&state[l.id]?.method===method).reduce((sum,l)=>sum+l.amount,0)]));
+  sourceValues.Rent=Math.max(sourceValues.Rent,post);
+  const assigned=methods.reduce((sum,method)=>sum+sourceValues[method],0),unassigned=Math.max(0,paid+post-assigned),funded=Math.max(1,paid+post);
+  const sourceRows=[...methods,"Unassigned"].map(method=>{const amount=method==="Unassigned"?unassigned:sourceValues[method],slug=method.toLowerCase();return `<div class="source-row"><span class="source-name"><i class="source-dot ${slug}"></i>${method}</span><span class="mono muted">${money(amount,true)}</span><strong class="mono">${pct(amount,funded).toFixed(1)}%</strong></div>`}).join("");
+  shell(`<header class="header dash-header"><div class="row"><div><p class="eyebrow">▦ Portfolio · Dubai</p><h1>Leos International Weybridge Garden Investment</h1></div><button class="chip" id="currency">${currency}</button></div><p>WG1 & WG4 · Kensington Gardens · post-handover payment plan</p></header><section class="visa-banner-wrap"><div class="visa-banner ${eligible?"eligible":"pending"}"><span class="visa-light" aria-hidden="true"></span><span>Golden Visa</span><strong>${eligible?"Eligible":"Not eligible"}</strong></div></section><section class="section dash-first"><div class="card hero dash-hero"><div class="row"><span class="label">Property value</span><span class="gold dash-arrow">↗</span></div><div class="big-number">${money(value)}</div><div class="dash-hero-grid"><div><span class="label">Fees (reg. + admin)</span><strong class="mono gold">${money(fees,true)}</strong></div><div><span class="label">Total commitment</span><strong class="mono">${money(total,true)}</strong></div></div><div class="dash-net"><span>Net cash engaged</span><strong class="mono">${money(paid,true)}</strong><span>· ${pct(paid,total).toFixed(1)}% of commitment</span></div><div class="row dash-progress-label"><span class="label">Payment progress</span><span class="mono gold">${pct(paid+post,total).toFixed(1)}%</span></div><div class="dash-track"><span style="width:${Math.min(100,pct(paid,total))}%"></span><i style="width:${Math.min(100,pct(post,total))}%"></i></div><div class="dash-legend"><div><span><b class="dot gold-dot"></b>Paid out of pocket</span><strong class="mono">${money(paid,true)}</strong><em>${pct(paid,total).toFixed(1)}%</em></div><div><span><b class="dot cyan-dot"></b>Funded by rent</span><strong class="mono">${money(post,true)}</strong><em>${pct(post,total).toFixed(1)}%</em></div><div><span><b class="dot gray-dot"></b>Remaining</span><strong class="mono">${money(remaining,true)}</strong><em>${pct(remaining,total).toFixed(1)}%</em></div></div></div></section><section class="section"><div class="dash-metrics"><div class="card"><span>⌁ Cash-on-cash yield</span><strong class="gold">${annual?pct(annual,paid).toFixed(2)+"%":"—"}</strong><small>Rent / net cash</small></div><div class="card"><span>↗ Gross yield</span><strong>${annual?pct(annual,value).toFixed(2)+"%":"—"}</strong><small>Rent / total price</small></div><div class="card"><span>▣ Payback in</span><strong>${annual?(paid/annual).toFixed(1)+" yrs":"—"}</strong><small>Cash break-even</small></div><div class="card"><span>✣ Leverage</span><strong class="cyan">${pct(post,total).toFixed(1)}%</strong><small>Share funded by rent</small></div></div></section><section class="section"><div class="card next-card"><span class="next-icon">◷</span><div><span class="label">Next installment</span><strong>${upcoming?money(upcoming.amount,true):"Complete"}</strong><small>${upcoming?upcoming.project+" · "+month(upcoming.date):"No payment due"}</small></div><span class="mono">${upcoming?date(upcoming.date):"✓"}</span></div></section><section class="section snowball-summary"><span class="label">Snowball effect</span><strong><span>${funding.WG1.rentPct.toFixed(1)}%</span><i>→</i><span>${funding.WG4.rentPct.toFixed(1)}%</span></strong><p>The rent-funded share grows by ${funding.snowball.toFixed(1)}× from WG1 to WG4.</p></section><section class="section"><p class="section-title">Per apartment</p><div class="dash-property-stack">${projectCard("WG1")}${projectCard("WG4")}</div></section><section class="section"><p class="section-title">◷ Funding by source</p><div class="card source-card"><div class="source-bar">${methods.map(method=>`<span class="${method.toLowerCase()}" style="width:${pct(sourceValues[method],funded)}%"></span>`).join("")}</div>${sourceRows}</div><p class="source-note">Post-handover is auto-classified as “Rent” (tenant-funded).</p></section>`);
+  renderGoldenVisaMeter();
+  app.querySelector(".header h1").textContent="Leos Weybridge Garden Investment";
+  app.querySelector(".header p:not(.eyebrow)").textContent="WG1 & WG4 · Payment plan";
+  document.querySelector("#currency").onclick=()=>{currency=currency==="EUR"?"AED":"EUR";localStorage.setItem("wg-currency",currency);renderHomeReference()};
+}
+function renderGoldenVisa(){const eligible=(TOTALS.WG1+TOTALS.WG4)*AED_PER_EUR>GOLDEN_VISA_AED,section=document.createElement("section");app.querySelector(".header h1").textContent="Leos International Weybridge Garden Investment";section.className="visa-banner-wrap";section.innerHTML=`<div class="visa-banner ${eligible?"eligible":"pending"}"><span class="visa-light" aria-hidden="true"></span><span>Golden Visa</span><strong>${eligible?"Eligible":"Not eligible"}</strong></div>`;app.querySelector(".section")?.before(section)}
+function wireGoldenVisa(){document.querySelector("#currency")?.addEventListener("click",()=>queueMicrotask(()=>{renderGoldenVisa();wireGoldenVisa()}),{once:true})}
+function render(){if(route==="home")renderHomeReference();if(route==="payments")renderPayments();if(route==="rent")renderRent();if(route==="resale")renderResaleCards();if(route==="estimation")renderEstimation()}
+function navigate(next){route=next;if(location.protocol==="http:"||location.protocol==="https:")history.replaceState(null,"",next==="home"?"/":`/${next}`);render();window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll(".bottom-nav button").forEach(b=>b.onclick=()=>navigate(b.dataset.route));
+const statusTime=document.querySelector("#status-time");
+if(statusTime){const now=new Date();statusTime.textContent=now.toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"});}
+const path=location.pathname.split("/")[1];if(["payments","rent","resale","estimation"].includes(path))route=path;render();
+</script>
+  </body>
+</html>
