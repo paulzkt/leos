@@ -17,6 +17,7 @@ const lines=[
   ...WG1_SCHEDULE.map(([date,amount])=>({id:`WG1-${date}`,project:"WG1",date,amount})),
   ...WG4_SCHEDULE.map(([date,amount])=>({id:`WG4-${date}`,project:"WG4",date,amount}))
 ];
+// Aligned to WG4-519 SOA 22 Oct 2026: WG4 paid through 2026-10-10 (inst. 1-20); residual 208.44 AED dispute closed; next = inst. 21 on 2026-11-10.
 const RECEIPT_STATE={
   // Aligné 26 oct 2026 sur reçus CIF/MN (voir /workspace/leos-pdfs)
   "WG1-FEE-REG":"Salesforce","WG1-FEE-ADMIN":"Salesforce",
@@ -35,7 +36,7 @@ const RECEIPT_STATE={
   "WG4-2026-10-10":"Salary"
 };
 const PLANNED_SOURCES={"WG1-2026-10-30":{method:"Salary",channel:"cheque",note:"Prévu prélèvement chèque 30 oct 2026"}};
-const RECEIPT_MIGRATION_VERSION="receipts-2026-10-26-spa-aed-v7";
+const RECEIPT_MIGRATION_VERSION="receipts-2026-10-27-soa-wg4-v8";
 const RENT_DEFAULTS={
   WG1:{annual:17500,start:"2026-11-01",growth:0,benchmarkAed:70000},
   WG4:{annual:22500,start:"2028-08-01",growth:0,benchmarkAed:90000}
